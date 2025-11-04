@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        
+        body {
+            font-family: 
+            background-color 
+            display: flex
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: 
+            border: 1px solid 
+            padding: 20px;
+            ;
+            width: 450px; 
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: 
+            width: 40%; 
+        }
+        input[type="text"], 
+        input[type="password"], 
+        input[type="email"], 
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid 
+        }
+        .form-title {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .action-buttons td {
+            border: none;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="form-title">Registration form</div>
+    <form action="#" method="POST">
+        <table>
+            <tr>
+                <th>Enter your first</th>
+                <td><input type="text" name="first_name" placeholder="enter your first name"></td>
+            </tr>
+            <tr>
+                <th>Enter your last</th>
+                <td><input type="text" name="last_name"></td>
+            </tr>
+            <tr>
+                <th>Enter your password</th>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <th>ReEnter your password</th>
+                <td><input type="password" name="re_password"></td>
+            </tr>
+            <tr>
+                <th>Enter your email</th>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>Enter your mobile</th>
+                <td><input type="tel" name="mobile"></td>
+            </tr>
+            <tr>
+                <th>Enter your address</th>
+                <td><textarea name="address" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <th>Select your gender</th>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">female</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Select your hobbies</th>
+                <td>
+                    <input type="checkbox" id="hobby1" name="hobby[]" value="hobby1">
+                    <label for="hobby1">hobby 1</label>
+                    <input type="checkbox" id="hobby2" name="hobby[]" value="hobby2">
+                    <label for="hobby2">hobby 2</label>
+                    <input type="checkbox" id="hobby3" name="hobby[]" value="hobby3">
+                    <label for="hobby3">hobby 3</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Select your DOB</th>
+                <td><input type="text" name="dob" placeholder="dd-mm-yyyy"></td>
+            </tr>
+            <tr>
+                <th>Select your country</th>
+                <td>
+                    <select name="country">
+                        <option value="">Select your country</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Upload your pic</th>
+                <td><input type="file" name="profile_pic"></td>
+            </tr>
+            <tr class="action-buttons">
+                <td colspan="2">
+                    <input type="submit" value="Save My Data">
+                    <input type="reset" value="Reset Data">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
